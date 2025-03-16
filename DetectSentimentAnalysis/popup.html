@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SentimentAnalysisSearch</title>
+  <script src="popup.js"></script>
+</head>
+<style>
+  .progress-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: 
+      radial-gradient(closest-side, white 79%, transparent 80% 100%),
+      conic-gradient(hotpink 75%, #ffc0cb 0);    
+  }
+  
+  .dialog-style{
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+  }
+  .center {
+          background-color: #ffc0cb;
+        }
+  </style>
+  </head>
+<body>
+  <dialog>
+    <div class="dialog-style">
+    <h3>sentiment analysis: </h3>
+    <div style="margin-left: 403px"><div class="progress-bar" id="sentimentScoreval">
+        <progress value="75" min="0" max="100" style="visibility:hidden;height:0;width:0;"></progress>
+      </div>
+    </div>
+    <p id="sentiment"></p>
+    <h3>Personally identifiable information</h3>
+    <p id="pii"></p>
+    <h3>Masked Data</h3>
+    <p id="piiInfo"></p>
+    <button class="center" autofocus>Close</button>
+    </div>
+    </dialog>
+  <button id="analyzeButton">Analyze Sentiment</button>
+
+  <P id="resultText"></P>
+</body>
+</html>
