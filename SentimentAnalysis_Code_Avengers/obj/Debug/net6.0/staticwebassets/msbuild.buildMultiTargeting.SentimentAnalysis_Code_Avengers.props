@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\SentimentAnalysis_Code_Avengers.props" />
+</Project>
